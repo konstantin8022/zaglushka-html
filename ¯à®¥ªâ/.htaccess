@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteCond %{THE_REQUEST} ^.*/index.php 
+RewriteRule ^(.*)index.php$ http://www.moto26.net/$1 [R=301,L] 
+#RewriteCond %{REQUEST_METHOD}  !=GET
+#RewriteRule (.*)$ http://security.slopr.ru/ [R=301,L]
+allow from all
+allow from 144.76.87.91
+allow from 193.107.228.0/22
+allow from 84.54.236.83
+allow from 178.63.169.175
